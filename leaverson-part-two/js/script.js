@@ -26,8 +26,6 @@ let feed = 2;
 let pet = 1;
 let walk = (happylvl + 2, energylvl -1);
 
-
-
 for (let i = 0; i < 6; i++) {
     let userActions = String( prompt("feed, pet, or walk?") );
     console.log(userActions)
@@ -36,9 +34,15 @@ for (let i = 0; i < 6; i++) {
     } else if (userActions === "pet"){
         happylvl = happylvl + pet;
     } else if (userActions === "walk"){
-	    --energylvl;
-	    happylvl++;
-	    happylvl++;
+	    
+	    if(energylvl === 0){
+		    let userActions = String( alert("Not enough energy to enjoy a walk.") );
+	    } else {
+		    --energylvl;
+			happylvl++;
+			happylvl++;
+	    }
+	    
     }
     
     console.log("Energy Level: "  + energylvl);
@@ -46,4 +50,5 @@ for (let i = 0; i < 6; i++) {
     
 }
 
-console.log("Your pet " + petName + "has the following levels: ", "happiness", happylvl, ",energy ", energylvl)
+console.log("Your pet " + petName + " has the following levels:", "happiness", happylvl, "energy", energylvl)
+

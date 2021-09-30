@@ -1,0 +1,90 @@
+body {
+  font-family: 'Bungee', cursive;
+  margin: 0 4vw;
+}
+
+a{
+  text-decoration: none;
+  color: #7944e6;
+}
+
+a:hover{
+  color: #10fdff;
+}
+
+nav{
+  margin: 0;
+}
+
+.topNav{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin: 0;
+}
+  
+logo{
+  width: 50%;
+}
+
+  logo img{
+    width: 50%;
+  }
+
+  .navLinks{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 3vw;
+  }
+
+.about{
+  max-width: 100%;
+  display: flex;
+  background-color: #ff00ff;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 4vw;
+}
+
+  .about img{
+    width: 50%;
+    margin: auto;
+  }
+  
+  .htext h1{
+    font-size: 4vw;
+    margin: .6em 0 .2em 0;
+    line-height: 1em;
+  }
+
+  .htext p{
+    margin: 0;
+    font-size: 2.5vw;
+    line-height: 1.4em;
+  }
+
+  .threeCards{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card{
+    display: flex;
+    margin: 1.5em auto;
+    max-width: 45%;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-width: 1vw;
+    border-color: #7944e6;
+    text-align: center;
+  }
+
+  .card img{
+    width: 100%;
+  }
+
+  /*add desktop changes next */
