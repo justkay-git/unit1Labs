@@ -50,5 +50,5 @@ for (let i = 0; i < 6; i++) {
     
 }
 
-console.log("Your pet " + petName + " has the following levels:", "happiness", happylvl, "energy", energylvl)
+console.log("Your pet " + petName + "has the following levels:", "happiness", happylvl, "energy", energylvl)
 
