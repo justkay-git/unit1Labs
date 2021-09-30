@@ -1,4 +1,5 @@
 body {
+  background-color: darkblue;
   font-family: 'Bungee', cursive;
   margin: 0 4vw;
 }
@@ -20,71 +21,117 @@ nav{
   width: 100%;
   display: flex;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
   margin: 0;
-}
-  
+} 
+
+
 logo{
   width: 50%;
+  margin: 0;
 }
 
-  logo img{
+logo img{
     width: 50%;
-  }
+}
 
-  .navLinks{
+/* origin navlinks code
+.navLinks{
     width: 70%;
     display: flex;
     justify-content: space-around;
     font-size: 3vw;
-  }
+} */
+
+ul{
+  list-style-type: none;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 3vw;
+  margin: 0;
+}
 
 .about{
   max-width: 100%;
   display: flex;
   background-color: #ff00ff;
   flex-direction: column;
-  flex-wrap: wrap;
   padding: 4vw;
 }
 
-  .about img{
-    width: 50%;
-    margin: auto;
-  }
-  
+.foodTruck{
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.about img{
+  width: 50%;
+}
+
+.htext{
+  display: block;
+  flex: auto;
+}
   .htext h1{
     font-size: 4vw;
     margin: .6em 0 .2em 0;
     line-height: 1em;
   }
-
   .htext p{
     margin: 0;
     font-size: 2.5vw;
     line-height: 1.4em;
   }
 
-  .threeCards{
+.threeCards{
     display: flex;
     flex-direction: column;
   }
 
-  .card{
-    display: flex;
-    margin: 1.5em auto;
-    max-width: 45%;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
-    border-style: solid;
-    border-width: 1vw;
-    border-color: #7944e6;
-    text-align: center;
+.card{
+  display: flex;
+  margin: 1.5em auto;
+  max-width: 45%;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-width: 1vw;
+  border-color: #7944e6;
+  text-align: center;
+}
+
+.card img{
+  width: 100%;
+}
+
+/*add desktop changes next*/
+
+/*
+@media screen and (min-width: 768px){
+
+  .about{
+    flex-direction: row;
+    background-color: darkgreen;
   }
 
-  .card img{
-    width: 100%;
+  .about img{
+    width: 25%;
+    margin: auto;
   }
+    .htext{
+      display: block;
 
-  /*add desktop changes next */
+    }
+    .htext h1{
+      font-size: 2vw;
+      margin: .6em 0 .2em 0;
+    }
+    .htext p{
+      margin: 0;
+      font-size: 1vw;
+    }
+}
+*/
