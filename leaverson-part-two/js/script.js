@@ -16,3 +16,16 @@ Step 4: create loop that repeats 6 times the following
     - prompt user for an action input
 Step 5: after 6 successful actions log petName, happiness, and energy lvls.
 */
+
+var petName = prompt("Name your pet.")
+console.log(petName)
+
+
+let happylvl = 0;
+let energylvl = 0;
+
+for (let i = 0; i != 6; i++) {
+    let userActions = prompt("feed, pet, or walk?");
+    
+}
+console.log(petName, "happiness ", happylvl, ", energy ", energylvl)
