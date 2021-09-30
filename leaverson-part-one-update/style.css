@@ -1,7 +1,6 @@
 body {
-  background-color: darkblue;
   font-family: 'Bungee', cursive;
-  margin: 0 4vw;
+  margin: 0 2vw;
 }
 
 a{
@@ -24,8 +23,6 @@ nav{
   align-items: center;
   margin: 0;
 } 
-
-
 logo{
   width: 50%;
   margin: 0;
@@ -34,7 +31,6 @@ logo{
 logo img{
     width: 50%;
 }
-
 /* origin navlinks code
 .navLinks{
     width: 70%;
@@ -42,7 +38,6 @@ logo img{
     justify-content: space-around;
     font-size: 3vw;
 } */
-
 ul{
   list-style-type: none;
   width: 70%;
@@ -57,39 +52,37 @@ ul{
   display: flex;
   background-color: #ff00ff;
   flex-direction: column;
-  padding: 4vw;
+  padding: 2.5vw;
 }
 
 .foodTruck{
-  display: block;
+  display: flex;
   width: 100%;
+}
+
+.foodTruck img{
+  width: 50%;
   margin: auto;
 }
-
-.about img{
-  width: 50%;
-}
-
 .htext{
-  display: block;
-  flex: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-  .htext h1{
+.htext h1{
     font-size: 4vw;
     margin: .6em 0 .2em 0;
     line-height: 1em;
-  }
-  .htext p{
+}
+.htext p{
     margin: 0;
     font-size: 2.5vw;
     line-height: 1.4em;
-  }
-
+ }
 .threeCards{
     display: flex;
     flex-direction: column;
   }
-
 .card{
   display: flex;
   margin: 1.5em auto;
@@ -102,36 +95,50 @@ ul{
   border-color: #7944e6;
   text-align: center;
 }
-
 .card img{
   width: 100%;
 }
-
 /*add desktop changes next*/
-
-/*
 @media screen and (min-width: 768px){
-
   .about{
     flex-direction: row;
-    background-color: darkgreen;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2vw;
   }
 
-  .about img{
-    width: 25%;
-    margin: auto;
+  .foodTruck{
+    width: 40%;
+  }
+  .foodTruck img{
+    width: 80%;
+    margin: 0;
   }
     .htext{
-      display: block;
-
+      width: 60%;
+      margin: 0;
     }
     .htext h1{
-      font-size: 2vw;
-      margin: .6em 0 .2em 0;
+      font-size: 1.5em;
     }
     .htext p{
       margin: 0;
-      font-size: 1vw;
+      font-size: 1em;
     }
+    .threeCards{
+      flex-direction: row;
+      justify-items: space-evenly;
+    }
+  .card{
+    max-width: 20%;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-width: .6vw;
+    margin: 2em;  
+  }
+  .card img{
+    width: 100%;
+  }
 }
-*/
